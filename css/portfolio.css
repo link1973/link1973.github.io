@@ -191,8 +191,11 @@ p {
     top: 0;
     left: 0;
     z-index: 1;
-    background: url(https://link1973.github.io/images/404.jpg) center center no-repeat scroll #FFF;
+    background: url(https://link1973.github.io/images/404.jpg) center center no-repeat scroll #24122C;
     background-size: cover; }
+    @media (max-width: 768px) {
+      .notFoundComponent .areaOne {
+        background-size: 100%; } }
     .notFoundComponent .areaOne .textContainer {
       display: table;
       table-layout: fixed;
