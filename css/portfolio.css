@@ -191,7 +191,7 @@ p {
     top: 0;
     left: 0;
     z-index: 1;
-    background: url(./images/404.jpg) center center no-repeat scroll #FFF;
+    background: url(https://link1973.github.io/images/404.jpg) center center no-repeat scroll #FFF;
     background-size: cover; }
     .notFoundComponent .areaOne .textContainer {
       display: table;
