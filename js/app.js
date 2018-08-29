@@ -140,7 +140,7 @@ app.hideMenu = function() {
     targets:'.js-nav',
     opacity: [1, 0],
     easing: "easeInOutExpo",
-    duration: 200
+    duration: 150
   });
 
   anime({
@@ -169,3 +169,16 @@ app.hideMenuIcon = function() {
 app.showMenuIcon = function() {
   $(".menu").show();  
 }
+$('.single-item').slick();
+
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+        licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
+		autoScrolling:true,
+		scrollHorizontally: false,
+        scrollBar: true
+	});
+
+	//methods
+	$.fn.fullpage.setAllowScrolling(true);
+});

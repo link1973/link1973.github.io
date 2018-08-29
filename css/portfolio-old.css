@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font: normal 10px/1.9em "Montserrat", sans-serif; }
+  font: normal 15px/1.9em "Montserrat", sans-serif; }
 
 h1 {
   font-style: normal;
@@ -32,7 +32,7 @@ p {
 
 .portfolio {
   text-align: center;
-  font-size: 13px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
   height: 100%; }
 
@@ -41,8 +41,6 @@ p {
   width: 100%;
   overflow: hidden;
   height: 100%; }
-  .no-scroll .contentSection, .no-scroll .site-headerText, .no-scroll .site-headerMobile {
-    opacity: 0; }
 
 .hide-all {
   display: none !important; }
@@ -50,38 +48,6 @@ p {
 .show-all {
   display: inherit !important; }
 
-body {
-  width: 100wh;
-  height: 90vh;
-  color: #fff;
-  background: linear-gradient(-50deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 30s ease infinite;
-  -moz-animation: Gradient 30s ease infinite;
-  animation: Gradient 30s ease infinite;
-  background-attachment: fixed; }
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
 .main-nav {
   position: absolute;
   top: 15px;
@@ -95,7 +61,7 @@ body {
     display: block;
     height: 2px;
     width: 100%;
-    background-color: #FFF;
+    background-color: #000;
     margin-bottom: 4px;
     border-radius: 2px;
     -moz-border-radius: 2px;
@@ -131,7 +97,7 @@ body {
   opacity: 0;
   color: #ffffff;
   pointer-events: none;
-  background-color: transparent;
+  background-color: #1f9b7a;
   overflow: hidden;
   display: table; }
   .main-menu.active {
@@ -153,9 +119,10 @@ body {
     color: inherit;
     text-decoration: none;
     display: inline-block;
-    transition: color 0.75s ease-in-out;
-    -webkit-transition: color 0.75s ease-in-out;
-    -moz-transition: color 0.75s ease-in-out;
+    transition: color 0.25s ease-in-out;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    transform: translateZ(0);
     text-transform: uppercase; }
 
 .site-headerText {
@@ -165,55 +132,16 @@ body {
   font-weight: 600;
   padding-top: 20px;
   text-align: center;
+  width: 100%;
   position: absolute;
   top: 0;
   margin: 0 auto;
-  z-index: 5;
-  width: 100%;
-  transition: visability 0s, opacity 0.75s ease-in-out;
-  opacity: 0; }
-  .site-headerText img {
-    border-radius: 50%; }
+  z-index: 5; }
   .site-headerText.sticked {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
-    max-width: 50%; }
-  @media (max-width: 768px) {
-    .site-headerText {
-      display: none; } }
+    opacity: 0;
+    display: none; }
   .site-headerText a {
     text-decoration: none; }
-  .site-headerText span {
-    display: block; }
-    .site-headerText span.name {
-      font-size: 22px;
-      padding: 15px 0; }
-
-.site-headerMobile {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.26px;
-  font-weight: 600;
-  padding-top: 20px;
-  text-align: center;
-  margin: 0 auto;
-  z-index: 5;
-  width: 100%;
-  transition: visability 0s, opacity 0.75s ease-in-out; }
-  .site-headerMobile img {
-    border-radius: 50%; }
-  .site-headerMobile a {
-    text-decoration: none; }
-  .site-headerMobile span {
-    display: block; }
-    .site-headerMobile span.name {
-      font-size: 22px;
-      padding: 15px 0; }
-
-.fp-viewing-1 .site-headerText, .fp-viewing-2 .site-headerText, .fp-viewing-3 .site-headerText, .fp-viewing-4 .site-headerText {
-  opacity: 1; }
 
 .heroComponent {
   height: 100%;
@@ -287,88 +215,48 @@ body.notFound .main-nav .line {
 body.notFound .siteName {
   color: #FFF; }
 
-section {
-  height: 100%;
-  width: 100%; }
-
 .contentSection {
-  width: 780px;
-  max-width: 50%;
-  margin-left: 10%;
+  max-width: 780px;
+  margin-left: auto;
   margin-right: auto;
   padding-left: 2%;
   padding-right: 2%;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  padding-top: 100px;
-  transition: visability 0s, opacity 0.75s ease-in-out; }
+  padding-top: 100px; }
   .contentSection img {
     max-width: 100%; }
   .contentSection h2 {
-    font-size: 24px;
-    margin-bottom: 20px; }
+    border-bottom: 4px solid #000;
+    font-size: 44px;
+    margin-bottom: 20px;
+    letter-spacing: -6px; }
   .contentSection p {
-    margin-bottom: 2.5em;
-    line-height: 2.5;
-    font-size: 13px; }
+    margin-bottom: 2.5em; }
     .contentSection p.altText {
       font-size: 10px; }
-    .contentSection p strong {
-      margin-right: 20px; }
-    .contentSection p small {
-      display: block; }
-  .contentSection .contact {
-    margin-bottom: 5px;
-    font-size: 14px;
-    letter-spacing: 1px; }
-    .contentSection .contact i {
-      margin-right: 20px;
-      font-size: 18px; }
   @media (max-width: 767px) {
     .contentSection {
-      max-width: 100%;
-      width: auto;
-      margin-left: 2%;
-      margin-right: 2%; } }
+      max-width: 100%; } }
   .contentSection .container {
     display: flex; }
     .contentSection .container > div {
       width: 50%;
       text-align: center;
-      padding: 25px 0 45px;
-      background-color: rgba(0, 0, 0, 0.5);
-      margin: 4px; }
-      .contentSection .container > div .icon {
-        margin-bottom: 0;
-        font-size: 25px; }
+      border: 5px solid #FFF;
+      border-radius: 2%;
+      padding: 40px 0 80px; }
+      .contentSection .container > div.first {
+        background-color: #BCC483; }
+      .contentSection .container > div.second {
+        background-color: #E0D0CD; }
       .contentSection .container > div .header {
         text-transform: uppercase;
         font-weight: normal;
         letter-spacing: 4px;
         font-size: 10px; }
-      .contentSection .container > div .sub {
-        font-size: 12px;
-        line-height: 1.75;
-        margin: 0 15px; }
       .contentSection .container > div ul {
         list-style-type: none; }
         .contentSection .container > div ul li {
           display: block;
           margin-bottom: 5px; }
-  .contentSection h3 {
-    padding-top: 10px;
-    padding-bottom: 20px; }
-  .contentSection .rating {
-    display: table;
-    height: 10px;
-    width: 100%;
-    margin: 10px -2px 20px -2px; }
-    .contentSection .rating .bar {
-      display: table-cell;
-      border-left: 2px solid transparent;
-      border-right: 2px solid transparent;
-      background: rgba(0, 0, 0, 0.15);
-      background-clip: padding-box; }
-      .contentSection .rating .bar.solid {
-        background: #FFF;
-        background-clip: padding-box; }
