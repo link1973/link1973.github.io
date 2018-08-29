@@ -305,6 +305,7 @@ section {
   .contentSection img {
     max-width: 100%; }
   .contentSection h2 {
+<<<<<<< HEAD
     font-size: 24px;
     margin-bottom: 20px; }
   .contentSection p {
@@ -324,6 +325,16 @@ section {
     .contentSection .contact i {
       margin-right: 20px;
       font-size: 18px; }
+=======
+    border-bottom: 4px solid #000;
+    font-size: 44px;
+    margin-bottom: 20px;
+    letter-spacing: -6px; }
+  .contentSection p {
+    margin-bottom: 2.5em; }
+    .contentSection p.altText {
+      font-size: 10px; }
+>>>>>>> 53a4097c9a2ebbd3822a6813951c3418d4a20f4c
   @media (max-width: 767px) {
     .contentSection {
       max-width: 100%;
@@ -335,26 +346,40 @@ section {
     .contentSection .container > div {
       width: 50%;
       text-align: center;
+<<<<<<< HEAD
       padding: 25px 0 45px;
       background-color: rgba(0, 0, 0, 0.5);
       margin: 4px; }
       .contentSection .container > div .icon {
         margin-bottom: 0;
         font-size: 25px; }
+=======
+      border: 5px solid #FFF;
+      border-radius: 2%;
+      padding: 40px 0 80px; }
+      .contentSection .container > div.first {
+        background-color: #BCC483; }
+      .contentSection .container > div.second {
+        background-color: #E0D0CD; }
+>>>>>>> 53a4097c9a2ebbd3822a6813951c3418d4a20f4c
       .contentSection .container > div .header {
         text-transform: uppercase;
         font-weight: normal;
         letter-spacing: 4px;
         font-size: 10px; }
+<<<<<<< HEAD
       .contentSection .container > div .sub {
         font-size: 12px;
         line-height: 1.75;
         margin: 0 15px; }
+=======
+>>>>>>> 53a4097c9a2ebbd3822a6813951c3418d4a20f4c
       .contentSection .container > div ul {
         list-style-type: none; }
         .contentSection .container > div ul li {
           display: block;
           margin-bottom: 5px; }
+<<<<<<< HEAD
   .contentSection h3 {
     padding-top: 10px;
     padding-bottom: 20px; }
@@ -372,3 +397,5 @@ section {
       .contentSection .rating .bar.solid {
         background: #FFF;
         background-clip: padding-box; }
+=======
+>>>>>>> 53a4097c9a2ebbd3822a6813951c3418d4a20f4c
